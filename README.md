@@ -5,3 +5,9 @@
 To clone Gmail with few of functionality curremtly its half baked after review by Guvi panel the rest of the project will be updated without bugs.
 
 >Fully functional project will be soon commited. 
+
+[Hosdted on Netlify]:https://gmail-clone2021.netlify.app/
+
+You will be needing Credentials
+>Client ID
+>API Key 
