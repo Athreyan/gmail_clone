@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gmail</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="hearder_left">
+            <span class="material-icons">menu</span>
+            <img src="https://i.pinimg.com/originals/ae/47/fa/ae47fa9a8fd263aa364018517020552d.png" alt="">
+
+        </div>
+        <div class="header_middle">
+            <span class="material-icons">serch</span>
+            <input type="text" name="serchMail" placeholder="Search Mail">
+            <span class="material-icons">arrow_drop_down</span>
+        </div>
+        <div class="hearder_rigth">
+            <span class="material-icons">
+                account_circle
+            </span>
+        </div>
+
+    </div>
+    <div class="main_body">
+        <div class="sidebar">
+            <button class="sidebar_compose"><span class="material-icons">add</span></button>
+
+            <div class="sidebar_options sidebar_options_active">
+                <button onclick="getPrimeMail()">
+                    <span class="material-icons">
+                        inbox
+                    </span></button>
+                <h3>Inbox</h3>
+
+            </div>
+
+            <div class="sidebar_options">
+                <button onclick="getSentMail()">
+                    <span class="material-icons">near_me</span> </button>
+                <h3>Sent</h3>
+
+            </div>
+            <div class="sidebar_options">
+                <button onclick="getDraft()"> <span class="material-icons">note</span></button>
+                <h3>Draft</h3>
+
+            </div>
+            <div class="sidebar_options">
+                <button class="athu" id="authorize_button" style="display: none;">Authorize</button>
+                <span class="material-icons">
+                    logout
+                </span>
+                <button class="signOut" id="signout_button" style="display: none;">Sign Out</button>
+
+            </div>
+        </div>
+        <div class="emailrow" style="padding-left: 200px; padding-bottom: 70%;">
+            <div class="emailtitle" id="emailtitle">
+                Title
+            </div>
+            <div class="emailmsg" id="emailmsg">
+                message
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+
+
+    <!-- <pre id="content" style="white-space: pre-wrap;"> -->
+
+    </pre>
+
+    <script src="script.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
+</body>
+
+</html>
